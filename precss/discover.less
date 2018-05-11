@@ -1,0 +1,53 @@
+/* Discover*/
+.discover {
+  &__inner {
+    .row-flex();
+  }
+  &__phone{
+    .col();
+    .size(5);
+    .size-md(12);
+    img{
+      .md-block({
+        margin: 0 auto;
+      });
+    }
+  }
+  &__text {
+    .col();
+    .size(7);
+    .size-md(12);
+    padding: 30px 60px;
+    .md-block({
+      padding: 20px;
+    });
+    .xs-block({
+      padding: 20px 0;
+    });
+    h3.heading{
+      .md-block({
+        text-align: center;
+      });
+    }
+  }
+  &__list {
+    padding: 20px 0;
+    li{
+      margin: 10px 0;
+      img{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      a{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 20px;
+        color: @color_green;
+        .xs-block({
+          padding: 10px;
+          font-size: 16px;
+        });
+      }
+    }
+  }
+}

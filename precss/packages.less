@@ -1,0 +1,51 @@
+/* Packages */
+.packages {
+  text-align: center;
+
+  &__cards {
+    .row-flex();
+    justify-content: center;
+  }
+  &__card {
+    .col();
+    .size(4);
+    .size-md(12);
+    background: @bg;
+    padding: 25px 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    h4{
+      .sub-heading();
+    }
+    .price{
+      padding: 5px 0;
+      background: #1d9d73;
+      color: #fff;
+      margin: 15px 0;
+      sup{
+        font-size: 24px;
+      }
+      span{
+        font-size: 45px;
+      }
+      sub{
+        font-size: 15px;
+      }
+    }
+    ul{
+      text-align: left;
+      display: inline-block;
+      li{
+        padding: 8px 0;
+        i.fa{
+          font-size: 14px;
+          margin-right: 10px;
+        }
+        i.fa-times{
+          color: @color_grey-light;
+        }
+      }
+    }
+  }
+}
+

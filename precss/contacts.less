@@ -1,0 +1,54 @@
+/* Contacts */
+.contacts {
+  text-align: center;
+
+  &__inner {
+
+  }
+  h4{
+    font-size: 35px;
+    line-height: @line_height;
+    color: @color_black;
+    padding: 10px 0;
+  }
+  p{
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  a.tel{
+    font-size: 20px;
+    color: @color_grey;
+    display: inline-block;
+    padding: 5px 0;
+    &::before{
+      content: url('@{img_path}telephone.png');
+      width: 38px;
+      height: 40px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+  span.time{
+    display: block;
+    padding: 5px 0;
+  }
+  span.icons{
+    a{
+      padding: 15px;
+      &:hover{
+        color: @color_grey-light;
+      }
+    }
+  }
+  .copyright {
+    padding: 10px 0;
+    img{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    span{
+      margin-left: 10px;
+    }
+  }
+}

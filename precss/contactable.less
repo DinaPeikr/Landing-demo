@@ -1,0 +1,115 @@
+#contactable{
+	box-sizing: border-box;
+}
+#contactable #contactable_inner {
+	background-image:url("@{img_path}user-form.png");
+	color:@color_white;
+	cursor:pointer;
+	height:50px;
+	right: -2px;
+	margin-right:0px;
+	overflow:hidden;
+	position:absolute;
+	text-indent:-100000px;
+	top:18%;
+	width:47px;
+	z-index:100;
+
+}
+
+#contactable #contactForm {
+	background-color:#1d9d73;
+	color:#FFFFFF;
+	height:auto;
+	right:0;
+	margin-right:-280px;
+	overflow:hidden;
+	padding:20px 30px;
+	position:absolute;
+	top:18%;
+	width:280px;
+	z-index:99;
+}
+
+#contactable form#contactForm input {
+	background:#dfdfdf;
+	outline-style:none;
+	outline-width:medium;
+	width:100%;
+	padding:5px;
+	border:1px solid #dfdfdf;
+	border-radius: 5px;
+	font-size:1em;
+	margin-bottom:10px;
+}
+
+#contactable form#contactForm .submit {
+	background: #F5410F;
+	outline-style:none;
+	outline-width:medium;
+	width:100%;
+	padding:10px;
+	border:1px solid #fff;
+	border-radius: 20px;
+	font-size:1em;
+	cursor:pointer;
+	color:#FFF;
+	text-transform:uppercase;
+	font-weight:bolder;
+	margin-top:10px;
+}
+#contactable form#contactForm .submit:hover {
+	background: #1d9d73;
+}
+#contactable form#contactForm p {
+	width:100%;
+	font-size:0.9em;
+}
+
+#contactable #contactForm .red {
+	color:	#F5410F;
+}
+
+#contactable #overlay {
+	background-color:#666666;
+	display:none;
+	height:100%;
+	right:0;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:0;
+}
+#contactable .error { background-color: #EDBE9C; }
+
+#contactable #name.error { background-color: #EDBE9C; }
+#contactable #email.error { background-color: #EDBE9C; }
+#contactable #comment.error { background-color: #EDBE9C; }
+
+#contactable form#contactForm label{
+	
+}
+
+#contactable form#contactForm #loading {
+	background: url("@{img_path}ajax-loader.gif") no-repeat;
+	width:55px;
+	height:55px;
+	margin: 100px auto;
+	display:none;
+}
+
+#contactable #callback {
+	font-size:1.1em;
+	color: #FFF;
+	width:100%;
+	margin: 100px auto;
+	display:none;
+}
+
+
+#contactable .holder {
+	margin:0 auto;
+	padding-top:20px;
+}
